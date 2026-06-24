@@ -16,7 +16,7 @@ st.set_page_config(
 
 # Enhanced modern CSS
 st.markdown("""
-    <style>
+<style>
     .stApp {
         background: linear-gradient(135deg, #e3f2fd 0%, #f7f9fa 100%);
     }
@@ -64,11 +64,20 @@ st.markdown("""
         margin-right: 0.5em;
         margin-bottom: 0.3em;
     }
+    
+    /* 🛠️ FIX: FORCE TEXT VISIBILITY & BULLET STYLE FOR LISTS */
     .symptom-list, .cause-list, .treatment-list {
-        margin-left: 1em;
+        margin-left: 1.5em !important;
         margin-bottom: 0.5em;
+        color: #2c3e50 !important; /* Dark charcoal color for visibility */
+        font-size: 1.05em;
+        list-style-type: disc !important; /* Ensure the bullet point renders */
     }
-    </style>
+    .symptom-list li, .cause-list li, .treatment-list li {
+        color: #2c3e50 !important;
+        margin-bottom: 0.3em;
+    }
+</style>
 """, unsafe_allow_html=True)
 
 
