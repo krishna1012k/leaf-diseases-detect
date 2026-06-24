@@ -1,8 +1,4 @@
-### Short GitHub Description
 
-**AI-powered Leaf Disease Detection System using FastAPI, Streamlit, and Groq Llama Vision to identify plant diseases, assess severity levels, and provide treatment recommendations from leaf images.**
-
----
 
 # README.md
 
