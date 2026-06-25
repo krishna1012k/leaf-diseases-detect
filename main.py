@@ -12,7 +12,17 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
-
+# Inject this once at the top of the file to fix all lists automatically
+st.markdown("""
+<style>
+    ul {
+        color: #111111 !important;
+    }
+    li {
+        color: #111111 !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # Enhanced modern CSS
 st.markdown("""
